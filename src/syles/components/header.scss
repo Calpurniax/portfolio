@@ -1,0 +1,65 @@
+@import "../core/mixin.scss";
+@import "../core/variables.scss";
+
+.c-header {
+    background-color: $secondpink-color;
+    padding: 5px;
+
+    @include tablet {
+        width: 35vw;
+    }
+
+    &__border {
+        border: 0.1rem solid $dark-color;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+
+        @include tablet {
+            flex-direction: column;
+            align-content: center;
+        }
+    }
+
+    &__img {
+        width: 25%;
+        border-radius: 50%;
+        border: 2px solid white;
+
+        @include tablet {
+            margin: auto;
+            width: 60%;
+        }
+    }
+
+    &__textBox {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        gap: 0.7rem;
+        color: $dark-color;
+        font-family: $font-title ;
+    }
+
+    &__title {
+        font-size: 20px;
+
+    }
+
+    &__iconList {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        &__icon {
+            color: $blue-color;
+
+            &:hover {
+                color: $pink-color;
+            }
+        }
+    }
+}

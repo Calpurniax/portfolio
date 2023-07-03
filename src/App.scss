@@ -1,0 +1,10 @@
+@import "./syles/core/reset.scss";
+@import "./syles/core/mixin.scss";
+
+.App {
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
