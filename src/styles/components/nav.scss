@@ -16,6 +16,7 @@
             text-align: center;
             padding-bottom: 1rem;
             @include titleStyle;
+            padding-top: 1rem;
 
             @include tablet {
                 padding-top: 2rem;

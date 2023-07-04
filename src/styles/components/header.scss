@@ -4,9 +4,14 @@
 .c-header {
     padding: 0.3rem;
     text-align: center;
+    height: 25vh;
 
     @include tablet {
         width: 35vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     &__border {
@@ -15,11 +20,14 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 20px;
+        padding: 25px;
+        height: 25vh;
 
         @include tablet {
             flex-direction: column;
             align-content: center;
+            justify-content: center;
+            height: 95vh;
         }
     }
 
@@ -29,7 +37,7 @@
         border: 0.2rem solid $secondpink-color;
 
         @include tablet {
-            margin: auto;
+            border-radius: 10px;
             width: 60%;
         }
     }
@@ -40,11 +48,11 @@
         overflow: hidden;
         gap: 0.7rem;
         @include titleStyle;
+
     }
 
     &__title {
         font-size: 2rem;
-
     }
 
     &__iconList {
@@ -52,6 +60,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        margin-top: 1rem;
 
     }
 }

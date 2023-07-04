@@ -2,11 +2,23 @@
 @import "../core/variables.scss";
 
 .c-footer {
-    background-color: $secondpink-color;
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     height: 10%;
     color: $blue-color;
-    padding: 1rem;
+    margin: 0 0.3rem 0 0.3rem;
+    //padding: 2rem 1rem 1rem 1rem;
+
+    @include tablet {
+        width: auto;
+    }
+
+    &__border {
+        border-top: 0.1rem solid $blue-color;
+    }
+
+    &__text {
+        padding: 2rem 1rem 1rem 1rem;
+    }
 }
