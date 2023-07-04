@@ -3,17 +3,23 @@
 
 .c-nav {
     padding: 1rem;
-    border-bottom: solid 0.1rem $blue-color;
-    margin: 0 0.3rem 0 0.3rem;
 
     &__box {
         list-style-type: none;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        border-bottom: solid 0.1rem $blue-color;
+        margin: 0 0.3rem 0 0.3rem;
+
 
         &__link {
             text-align: center;
+            padding-bottom: 1rem;
             @include titleStyle;
+
+            @include tablet {
+                padding-top: 2rem;
+            }
 
             &:hover {
                 color: $pink-color

@@ -1,3 +1,18 @@
+@import "../core/mixin.scss";
+@import "../core/variables.scss";
+
 .landing {
-    height: 50vh;
+    padding: 1rem;
+    color: $blue-color;
+    font-size: 1.3rem;
+    text-align: center;
+
+    &__title {
+        font-size: 1.5rem;
+        margin: 2rem 0 2rem 0;
+
+        &__span {
+            color: $pink-color;
+        }
+    }
 }

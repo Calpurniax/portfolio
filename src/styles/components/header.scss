@@ -3,6 +3,7 @@
 
 .c-header {
     padding: 0.3rem;
+    text-align: center;
 
     @include tablet {
         width: 35vw;
@@ -42,7 +43,7 @@
     }
 
     &__title {
-        font-size: 20px;
+        font-size: 2rem;
 
     }
 
