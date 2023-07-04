@@ -1,4 +1,4 @@
-import "../syles/components/header.scss"
+import "../styles/components/header.scss"
 import sofiaPhoto from "../images/foto-sofia.jpg";
 import {Icon} from "./icon"
 

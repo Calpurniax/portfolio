@@ -2,15 +2,14 @@
 @import "../core/variables.scss";
 
 .c-header {
-    background-color: $secondpink-color;
-    padding: 5px;
+    padding: 0.3rem;
 
     @include tablet {
         width: 35vw;
     }
 
     &__border {
-        border: 0.1rem solid $dark-color;
+        border: 0.1rem solid $blue-color;
         border-radius: 10px;
         display: flex;
         align-items: center;
@@ -26,7 +25,7 @@
     &__img {
         width: 25%;
         border-radius: 50%;
-        border: 2px solid white;
+        border: 0.2rem solid $secondpink-color;
 
         @include tablet {
             margin: auto;
@@ -39,8 +38,7 @@
         flex-direction: column;
         overflow: hidden;
         gap: 0.7rem;
-        color: $dark-color;
-        font-family: $font-title ;
+        @include titleStyle;
     }
 
     &__title {
@@ -54,12 +52,5 @@
         flex-direction: row;
         justify-content: space-evenly;
 
-        &__icon {
-            color: $blue-color;
-
-            &:hover {
-                color: $pink-color;
-            }
-        }
     }
 }

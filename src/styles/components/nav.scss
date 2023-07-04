@@ -1,0 +1,23 @@
+@import "../core/variables.scss";
+@import "../core/mixin.scss";
+
+.c-nav {
+    padding: 1rem;
+    border-bottom: solid 0.1rem $blue-color;
+    margin: 0 0.3rem 0 0.3rem;
+
+    &__box {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        &__link {
+            text-align: center;
+            @include titleStyle;
+
+            &:hover {
+                color: $pink-color
+            }
+        }
+    }
+}
