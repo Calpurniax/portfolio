@@ -2,6 +2,7 @@ import './App.scss';
 import { Header } from './components/header'
 import { Nav } from './components/nav'
 import { Landing } from './layouts/landing'
+import { Summary } from './layouts/summary';
 import { Footer } from './components/footer'
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
       <div className='mainContainer'>
         <Nav />
         <main>
-          <Landing />
+          {/* <Landing /> */}
+          <Summary />
         </main>
         <Footer />
       </div>
