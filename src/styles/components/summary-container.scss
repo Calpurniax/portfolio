@@ -1,0 +1,10 @@
+@import "../core/mixin.scss";
+@import "../core/variables.scss";
+
+.c-summaryContainer {
+    &__title {
+        @include titleStyle;
+        margin-bottom: 0.7rem;
+        font-size: 1.3rem;
+    }
+}

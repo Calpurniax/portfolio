@@ -1,0 +1,11 @@
+@import "../core/mixin.scss";
+@import "../core/variables.scss";
+
+.c-summaryArticle {
+    margin-bottom: 0.7rem;
+
+    &__title {
+        @include titleStyle;
+        margin-bottom: 0.3rem;
+    }
+}

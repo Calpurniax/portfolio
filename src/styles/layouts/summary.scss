@@ -1,7 +1,28 @@
+@import "../core/mixin.scss";
+@import "../core/variables.scss";
+
 .summary {
+    margin: 0 1rem 0 1rem;
+    color: $blue-color;
+
+    &__title {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.8rem;
+        @include titleStyle;
+    }
+
+    &__text {
+        margin-bottom: 0.7rem;
+    }
 
     &__box {
         display: grid;
         grid-template-columns: 1fr 1fr;
+
+        &__border {
+            border-right: solid $blue-color 0.1rem;
+            margin-right: 0.3rem;
+        }
     }
 }
