@@ -3,6 +3,8 @@ import { Header } from './components/header'
 import Nav from './components/nav'
 import { Landing } from './layouts/landing'
 import { Summary } from './layouts/summary';
+import Projects from './layouts/projects';
+
 import { Footer } from './components/footer'
 import { useState } from 'react';
 
@@ -27,17 +29,28 @@ function App() {
       projects: false
     })
   }
+  const handleViewProjects = () => {
+    setVista({
+      landing: false,
+      summary: false,
+      projects: true
+    })
+  }
   const handleViews = (id) => {
-    if (id === 'summary') {
+    if (id === 'projects') {
+      handleViewProjects()
+    } else if (id === 'summary') {
       handleViewSummary()
     } else {
       handleViewLanding()
     }
   }
   const rendingViews = () => {
-    if (vista.landing) {
-      return <Landing />
-    } else return <Summary />
+    if (vista.projects) {
+      return <Projects />
+    } else if (vista.summary) {
+      return <Summary />
+    } else return <Landing />
   }
   return (
     <div className="App">
