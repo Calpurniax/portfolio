@@ -1,8 +1,10 @@
-
-
+import "../styles/layouts/projects.scss";
+import { ProjectsArticle } from "../components/projects-article";
 const Projects =()=>{
    return (
-    <h2>holi, proyectos</h2>
+    <section className="projects">
+      <ProjectsArticle/>
+    </section>
    )
 }
 export default Projects;
