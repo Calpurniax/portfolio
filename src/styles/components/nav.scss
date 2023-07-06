@@ -15,16 +15,14 @@
         &__link {
             text-align: center;
             padding-bottom: 1rem;
-            @include titleStyle;
+            font-family: $font-title;
             padding-top: 1rem;
 
             @include tablet {
                 padding-top: 2rem;
             }
 
-            &:hover {
-                color: $pink-color
-            }
+            @include linkHover;
         }
     }
 }

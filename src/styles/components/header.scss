@@ -5,6 +5,7 @@
     padding: 0.3rem;
     text-align: center;
     height: 25vh;
+    font-family: $font-title;
 
     @include tablet {
         width: 35vw;
@@ -47,8 +48,6 @@
         flex-direction: column;
         overflow: hidden;
         gap: 0.7rem;
-        @include titleStyle;
-
     }
 
     &__title {

@@ -1,0 +1,43 @@
+@import "../core/variables.scss";
+@import "../core/mixin.scss";
+
+.projects__article {
+    text-align: center;
+    background-color: $secondpink-color;
+    border-radius: 10px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__techDiv {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 15rem;
+        right: 10rem;
+        gap: 1rem;
+        margin-left: 1rem;
+        color: $dark-color;
+    }
+
+    &__img {
+        width: 80%;
+        border-radius: 10px;
+        padding-bottom: 0.5rem;
+    }
+
+    &__title {
+        text-decoration: none;
+        color: $dark-color;
+        @include linkHover;
+    }
+
+    &__borderBottom {
+        margin: 0 6rem 0 6rem;
+        padding-top: 1rem;
+        border-bottom: solid 0.1rem $blue-color;
+    }
+}

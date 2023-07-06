@@ -12,7 +12,11 @@
     }
 }
 
-@mixin titleStyle {
-    color: $blue-color;
-    font-family: $font-title
+
+@mixin linkHover {
+
+    &:hover {
+        color: $pink-color;
+    }
+
 }

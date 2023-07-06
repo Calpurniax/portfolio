@@ -5,7 +5,7 @@
     margin-bottom: 0.7rem;
 
     &__title {
-        @include titleStyle;
+        font-family: $font-title;
         margin-bottom: 0.3rem;
     }
 }

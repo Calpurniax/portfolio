@@ -1,9 +1,7 @@
 @import "../core/variables.scss";
+@import "../core/mixin.scss";
 
 .c-header__iconList__icon {
     color: $blue-color;
-
-    &:hover {
-        color: $pink-color;
-    }
+    @include linkHover;
 }

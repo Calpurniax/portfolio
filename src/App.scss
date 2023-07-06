@@ -3,6 +3,7 @@
 
 .App {
     width: 100vw;
+    color: $blue-color;
 
     @include tablet {
         display: flex;
