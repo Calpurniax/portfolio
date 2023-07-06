@@ -1,4 +1,10 @@
 .projects {
     padding: 0.3rem;
+    text-align: center;
+
+    &__title {
+        font-size: 1.8rem;
+        padding-bottom: 1rem;
+    }
 
 }

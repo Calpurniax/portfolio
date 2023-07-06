@@ -5,7 +5,14 @@
     margin-bottom: 0.7rem;
 
     &__title {
-        font-family: $font-title;
         margin-bottom: 0.3rem;
+    }
+
+    &__dates {
+        @include italicText;
+    }
+
+    &__text {
+        @include regularText;
     }
 }

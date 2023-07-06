@@ -14,9 +14,18 @@
 
 
 @mixin linkHover {
-
     &:hover {
         color: $pink-color;
     }
+}
 
+@mixin italicText {
+    font-family: $font-text;
+    font-style: italic;
+    font-weight: 300;
+}
+
+@mixin regularText {
+    font-family: $font-text;
+    font-weight: 400;
 }

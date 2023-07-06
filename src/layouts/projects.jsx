@@ -4,6 +4,7 @@ import rickandmorty_landing from "../images/R&M/portadaR&M_mobile.png"
 const Projects =()=>{
    return (
     <section className="projects">
+      <h3 className="projects__title">Muestras de proyectos</h3>
       <ProjectsArticle
       tech1={'React'}
       tech2={'Fetch'}
