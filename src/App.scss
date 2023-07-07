@@ -2,13 +2,15 @@
 @import "./styles/core/mixin.scss";
 
 .App {
-    //width: 100vw;
-    overflow: overlay;
+
+    overflow-y: hidden;
+    height: 100vh;
     color: $blue-color;
 
     @include tablet {
         display: flex;
         flex-direction: row;
     }
+
 
 }
