@@ -2,7 +2,8 @@
 @import "./styles/core/mixin.scss";
 
 .App {
-    width: 100vw;
+    //width: 100vw;
+    overflow: overlay;
     color: $blue-color;
 
     @include tablet {
