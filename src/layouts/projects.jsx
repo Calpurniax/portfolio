@@ -1,8 +1,9 @@
 import "../styles/layouts/projects.scss";
 import { ProjectsArticle } from "../components/projects-article";
 import rickandmorty_landing from "../images/r&m/portadaR&M_mobile.png"
-import taskList_landing from "../images/task_list/portadaTaskList_mobile.png"
-import casaCanto_landing from "../images/casaCanto/portadaCasaCanto_mobile.png"
+import taskList_landing from "../images/task-list/portadaTaskList_mobile.png"
+import casaCanto_landing from "../images/casa-canto/portadaCasaCanto_mobile.png"
+import cardCreator_landing from "../images/card-creator/card-creator_desktop.png"
 
 const Projects =()=>{
    return (
@@ -25,9 +26,15 @@ const Projects =()=>{
          <ProjectsArticle
         tech={['React', 'Local Storage']}        
         img={taskList_landing}
-        alt={'Lista de tareas'}
+        alt={'Web para crear tu lista de tareas'}
         link={"https://calpurniax.github.io/lista-de-tareas/"}
         title={'Lista de tareas con local storage'}/>
+         <ProjectsArticle
+        tech={['React', 'NodeJS']}        
+        img={cardCreator_landing}
+        alt={'Web para crear tarjetas de visita'}
+        link={"https://calpurniax.github.io/lista-de-tareas/"}
+        title={'Card Generator: crea tu tarjeta de visita'}/>
       </div>
       
     </section>

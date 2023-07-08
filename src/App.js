@@ -4,7 +4,6 @@ import Nav from './components/nav'
 import { Landing } from './layouts/landing'
 import { Summary } from './layouts/summary';
 import Projects from './layouts/projects';
-
 import { Footer } from './components/footer'
 import { useState } from 'react';
 
@@ -56,7 +55,7 @@ function App() {
     <div className="App">
       <Header />
       <div className='mainContainer'>
-        <Nav handleViews={handleViews} />
+        <Nav handleViews={handleViews} vista={vista} />
         <main>
           {rendingViews()}
         </main>
