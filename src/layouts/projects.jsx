@@ -9,7 +9,7 @@ const Projects =()=>{
    return (
     <section className="projects">
       <h3 className="projects__title">Muestras de proyectos</h3>
-      <div className="projects__container">
+      <ul className="projects__container">
         <ProjectsArticle
         tech={['React','Fetch']}
         tech2={'Fetch'}
@@ -35,7 +35,7 @@ const Projects =()=>{
         alt={'Web para crear tarjetas de visita'}
         link={"https://calpurniax.github.io/lista-de-tareas/"}
         title={'Card Generator: crea tu tarjeta de visita'}/>
-      </div>
+      </ul>
       
     </section>
    )
