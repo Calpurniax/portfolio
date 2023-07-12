@@ -13,6 +13,7 @@ function App() {
     summary: false,
     projects: false
   })
+  const [showModal, setShowModal] = useState(false)
 
   const handleViewLanding = () => {
     setVista({
@@ -44,9 +45,12 @@ function App() {
       handleViewLanding()
     }
   }
+  const handleModal = () => {
+    setShowModal(!showModal)
+  }
   const rendingViews = () => {
     if (vista.projects) {
-      return <Projects />
+      return <Projects showModal={showModal} handleModal={handleModal} />
     } else if (vista.summary) {
       return <Summary />
     } else return <Landing />

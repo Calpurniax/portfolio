@@ -4,8 +4,12 @@ import rickandmorty_landing from "../images/r&m/portadaR&M_mobile.png"
 import taskList_landing from "../images/task-list/portadaTaskList_mobile.png"
 import casaCanto_landing from "../images/casa-canto/portadaCasaCanto_mobile.png"
 import cardCreator_landing from "../images/card-creator/card-creator_desktop.png"
+import Modal from "../components/modal";
 
-const Projects =()=>{
+const Projects =({showModal,handleModal})=>{
+  const handleBtn=()=>{
+    handleModal()
+  }
    return (
     <section className="projects">
       <h3 className="projects__title">Muestras de proyectos</h3>
@@ -35,6 +39,8 @@ const Projects =()=>{
         alt={'Web para crear tarjetas de visita'}
         link={"https://calpurniax.github.io/lista-de-tareas/"}
         title={'Card Generator: crea tu tarjeta de visita'}/>
+        <Modal id={'modal1'} showModal={showModal} handleModal={handleModal}/>
+        <button onClick={handleBtn}>showModal</button>
       </ul>
       
     </section>
