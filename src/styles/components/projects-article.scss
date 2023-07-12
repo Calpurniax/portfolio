@@ -11,12 +11,19 @@
     &__container {
         padding: 1rem 0 1rem 0.5rem;
         display: grid;
-        grid-template-columns: 4rem 1fr;
+        grid-template-columns: 3rem 1fr;
         grid-template-rows: 1fr(3);
     }
 
+    &__icon {
+        cursor: pointer;
+        @include linkHover;
+    }
+
     &__techDiv {
-        margin-left: 1rem;
+        margin-left: 0.5rem;
+        margin-bottom: 2rem;
+        z-index: 0;
         width: fit-content;
         grid-column: 1/2;
         grid-row: 2;

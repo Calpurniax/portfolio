@@ -9,10 +9,15 @@ export const ProjectsArticle = (props) => {
                })
         }       
     }
+    const handleOpenModal=(ev)=>{
+        console.log(ev.currentTarget.id)
+        props.handleModals(ev.currentTarget.id)
+      }
     return(
     <li>
         <article className="projects__article">
             <div className="projects__article__container">
+                <div><i className="fa-solid fa-magnifying-glass-plus projects__article__icon" id={props.id} onClick={handleOpenModal}></i></div>
                 <div className="projects__article__techDiv">        
                     {renderTechs()}
                 </div>

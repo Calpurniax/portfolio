@@ -7,17 +7,15 @@ import cardCreator_landing from "../images/card-creator/card-creator_desktop.png
 import Modal from "../components/modal";
 
 const Projects =({showModal,handleModals})=>{
-  const handleBtn=(ev)=>{
-    console.log(ev.currentTarget.id)
-    handleModals(ev.currentTarget.id)
-  }
+ 
    return (
     <section className="projects">
       <h3 className="projects__title">Muestras de proyectos</h3>
       <ul className="projects__container">
         <ProjectsArticle
-        tech={['React','Fetch']}
-        tech2={'Fetch'}
+        id={'rickAndMorty'}
+        handleModals={handleModals}
+        tech={['React','Fetch']}        
         img={rickandmorty_landing}
         alt={'Buscador de personajes de Rick and Morty'}
         link={"https://calpurniax.github.io/modulo-3-evaluacion-final-Calpurniax/"}
@@ -42,8 +40,8 @@ const Projects =({showModal,handleModals})=>{
         title={'Card Generator: crea tu tarjeta de visita'}/>
         <Modal text='modal de Rick' id='rickAndMorty' showModal={showModal} handleModal={handleModals}/>
         <Modal text='modal de Casa canto' id='casaCanto' showModal={showModal} handleModal={handleModals}/>
-        <button id={'rickAndMorty'} onClick={handleBtn}>showModal Rick</button>
-        <button id={'casaCanto'} onClick={handleBtn}>showModal Canto</button>
+        <button >showModal Rick</button>
+        <button id={'casaCanto'}>showModal Canto</button>
       </ul>
       
     </section>
