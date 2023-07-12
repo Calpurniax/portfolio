@@ -13,7 +13,12 @@ function App() {
     summary: false,
     projects: false
   })
-  const [showModal, setShowModal] = useState(false)
+  const [showModal, setShowModal] = useState({
+    rickAndMorty: false,
+    casaCanto: false,
+    taskList: false,
+    cardCreator: false,
+  })
 
   const handleViewLanding = () => {
     setVista({
@@ -45,12 +50,33 @@ function App() {
       handleViewLanding()
     }
   }
-  const handleModal = () => {
-    setShowModal(!showModal)
+
+  // const handleModalRick = () => {
+  //   const oldValue = showModal, rickAndMorty 
+  //   setShowModal(
+
+  //     { ...showModal, rickAndMorty: (!oldValue) }
+
+
+  //   )
+  // }
+  const handleModals = (id) => {
+    const value = showModal[id]
+    setShowModal({ ...showModal, [id]: !value })
+    // if (id === 'rickAndMorty') {
+    //   handleModalRick()
+    // } else if (id === 'casaCanto') {
+    //   handleModalCasaCanto()
+    // } else if (id === 'taskList') {
+    //   handleModalTaskList()
+    // } else {
+    //   handleModalCardCreator()
+    // }
   }
+
   const rendingViews = () => {
     if (vista.projects) {
-      return <Projects showModal={showModal} handleModal={handleModal} />
+      return <Projects showModal={showModal} handleModals={handleModals} />
     } else if (vista.summary) {
       return <Summary />
     } else return <Landing />
@@ -63,7 +89,7 @@ function App() {
         <main>
           {rendingViews()}
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );

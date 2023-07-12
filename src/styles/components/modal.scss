@@ -1,0 +1,41 @@
+@import "../core/mixin.scss";
+@import "../core/variables.scss";
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+    &__container {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 90%;
+        background: white;
+        color: $blue-color;
+        z-index: 10;
+        border-radius: 16px;
+        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+    }
+
+    &__title {
+        padding: 1rem 0.3rem 0.5rem 0.3rem;
+        font-family: $font-title ;
+        font-size: 5rem;
+    }
+
+    &__text {
+        @include regularText;
+    }
+
+    &__arrow {
+        @include linkHover
+    }
+}
