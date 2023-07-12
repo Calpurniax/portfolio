@@ -4,7 +4,7 @@ import Nav from './components/nav'
 import { Landing } from './layouts/landing'
 import { Summary } from './layouts/summary';
 import Projects from './layouts/projects';
-import { Footer } from './components/footer'
+// import { Footer } from './components/footer'
 import { useState } from 'react';
 
 function App() {
@@ -19,6 +19,23 @@ function App() {
     taskList: false,
     cardCreator: false,
   })
+  const RandMProject =
+  {
+    title: "Buscador de personajes de Rick and Morty",
+    text: "Aplicación web realizada en React y con llamada a través del método fetch a una API de terceros. Tiene varios filtros de búsqueda: por nombre, especie, planeta y localización actual. El css tiene una paleta de colores de azul-verdoso y negro, sencillo y ligero."
+  }
+  const casaCantoProject = {
+    title: "Casa Canto, alquiler vacacional",
+    text: "Página web creada con wordpress para enseñar una casa de turismo, con información de contacto y una galería de fotos, el diseño y la paleta de colores busca transmitir elegancia y sobriedad"
+  }
+  const taskListProject = {
+    title: "Lista de tareas",
+    text: "Aplicación realizada utilizando React, tiene unas tareas por defecto que aparecen al levantar la web y después utilizando la funcionalidad de local storage el usuario puede añadir o quitar tareas,o marcarlas como realizadas. Implementé también un contador de tareas que cambia con las interacciones del usuario."
+  }
+
+
+
+
 
   const handleViewLanding = () => {
     setVista({
@@ -51,32 +68,17 @@ function App() {
     }
   }
 
-  // const handleModalRick = () => {
-  //   const oldValue = showModal, rickAndMorty 
-  //   setShowModal(
 
-  //     { ...showModal, rickAndMorty: (!oldValue) }
-
-
-  //   )
-  // }
   const handleModals = (id) => {
     const value = showModal[id]
     setShowModal({ ...showModal, [id]: !value })
-    // if (id === 'rickAndMorty') {
-    //   handleModalRick()
-    // } else if (id === 'casaCanto') {
-    //   handleModalCasaCanto()
-    // } else if (id === 'taskList') {
-    //   handleModalTaskList()
-    // } else {
-    //   handleModalCardCreator()
-    // }
   }
 
   const rendingViews = () => {
     if (vista.projects) {
-      return <Projects showModal={showModal} handleModals={handleModals} />
+      return <Projects showModal={showModal}
+        handleModals={handleModals} RandMProject={RandMProject}
+        casaCantoProject={casaCantoProject} taskListProject={taskListProject} />
     } else if (vista.summary) {
       return <Summary />
     } else return <Landing />

@@ -9,8 +9,7 @@ export const ProjectsArticle = (props) => {
                })
         }       
     }
-    const handleOpenModal=(ev)=>{
-        console.log(ev.currentTarget.id)
+    const handleOpenModal=(ev)=>{       
         props.handleModals(ev.currentTarget.id)
       }
     return(

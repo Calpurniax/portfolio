@@ -6,7 +6,7 @@ import casaCanto_landing from "../images/casa-canto/portadaCasaCanto_mobile.png"
 import cardCreator_landing from "../images/card-creator/card-creator_desktop.png"
 import Modal from "../components/modal";
 
-const Projects =({showModal,handleModals})=>{
+const Projects =({showModal,handleModals, RandMProject, casaCantoProject})=>{
  
    return (
     <section className="projects">
@@ -21,27 +21,34 @@ const Projects =({showModal,handleModals})=>{
         link={"https://calpurniax.github.io/modulo-3-evaluacion-final-Calpurniax/"}
         title={'Buscador de personajes de Rick and Morty'}/>
         <ProjectsArticle
+        id={'casaCanto'}
+        handleModals={handleModals}
         tech={['Wordpress']}
         img={casaCanto_landing}
         alt={'web Casa Canto'}
         link={"https://casa-canto.com/"}
         title={'Casa Canto - alquiler vacacional'}/>
-         <ProjectsArticle
+         {/* <ProjectsArticle
+        id={'taskList'}
+        handleModals={handleModals}
         tech={['React', 'Local Storage']}        
         img={taskList_landing}
         alt={'Web para crear tu lista de tareas'}
         link={"https://calpurniax.github.io/lista-de-tareas/"}
         title={'Lista de tareas con local storage'}/>
          <ProjectsArticle
+        id={'cardCreator'}
+        handleModals={handleModals}
         tech={['React', 'NodeJS']}        
         img={cardCreator_landing}
         alt={'Web para crear tarjetas de visita'}
         link={"https://calpurniax.github.io/lista-de-tareas/"}
-        title={'Card Generator: crea tu tarjeta de visita'}/>
-        <Modal text='modal de Rick' id='rickAndMorty' showModal={showModal} handleModal={handleModals}/>
-        <Modal text='modal de Casa canto' id='casaCanto' showModal={showModal} handleModal={handleModals}/>
-        <button >showModal Rick</button>
-        <button id={'casaCanto'}>showModal Canto</button>
+        title={'Card Generator: crea tu tarjeta de visita'}/> */}
+        <Modal projectObject={RandMProject} id='rickAndMorty' showModal={showModal} handleModal={handleModals}/>
+        <Modal projectObject={casaCantoProject} id='casaCanto' showModal={showModal} handleModal={handleModals}/>
+        <Modal text='modal de lista de tareas' id='taskList' showModal={showModal} handleModal={handleModals}/>
+        <Modal text='modal de card creator' id='cardCreator' showModal={showModal} handleModal={handleModals}/>
+       
       </ul>
       
     </section>

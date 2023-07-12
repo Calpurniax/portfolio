@@ -1,18 +1,19 @@
 import "../../styles/components/modal.scss"
 
-const Modal = ({ text, id, showModal, handleModal }) => {
+const Modal = ({ projectObject, id, showModal, handleModal }) => {
     const handleClick = (ev) => {
         handleModal(ev.currentTarget.id)
-        console.log(ev.currentTarget.id)
     }
     if (!showModal[id]) {
         return null
     }
     return (
-        <article className="modal"  >
+        <article className="modal">
             <div className="modal__container">
-                <h3 className="modal__title">{text}</h3>
-                <p className="modal__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quo voluptate, nulla at commodi repudiandae modi dolores debitis accusamus nesciunt quis, officia dolorum natus numquam voluptas, quas in maxime libero.</p>
+                <h3 className="modal__title">{projectObject.title}</h3>
+                <p className="modal__text">
+                    {projectObject.text}
+                </p>
                 <ul>
                     <li><img src="" alt="" />imagen1</li>
                     <li><img src="" alt="" />imagen2</li>
