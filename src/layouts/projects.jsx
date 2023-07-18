@@ -6,7 +6,7 @@ import casaCanto_landing from "../images/casa-canto/portadaCasaCanto_mobile.png"
 import cardCreator_landing from "../images/card-creator/card-creator_desktop.png"
 import Modal from "../components/modal";
 
-const Projects =({showModal,handleModals, RandMProject, casaCantoProject})=>{
+const Projects =({showModal,handleModals, RandMProject, casaCantoProject, taskListProject, cardCreator})=>{
  
    return (
     <section className="projects">
@@ -28,7 +28,7 @@ const Projects =({showModal,handleModals, RandMProject, casaCantoProject})=>{
         alt={'web Casa Canto'}
         link={"https://casa-canto.com/"}
         title={'Casa Canto - alquiler vacacional'}/>
-         {/* <ProjectsArticle
+         <ProjectsArticle
         id={'taskList'}
         handleModals={handleModals}
         tech={['React', 'Local Storage']}        
@@ -43,11 +43,11 @@ const Projects =({showModal,handleModals, RandMProject, casaCantoProject})=>{
         img={cardCreator_landing}
         alt={'Web para crear tarjetas de visita'}
         link={"https://calpurniax.github.io/lista-de-tareas/"}
-        title={'Card Generator: crea tu tarjeta de visita'}/> */}
+        title={'Card Generator: crea tu tarjeta de visita'}/>
         <Modal projectObject={RandMProject} id='rickAndMorty' showModal={showModal} handleModal={handleModals}/>
         <Modal projectObject={casaCantoProject} id='casaCanto' showModal={showModal} handleModal={handleModals}/>
-        <Modal text='modal de lista de tareas' id='taskList' showModal={showModal} handleModal={handleModals}/>
-        <Modal text='modal de card creator' id='cardCreator' showModal={showModal} handleModal={handleModals}/>
+        <Modal projectObject={taskListProject} id='taskList' showModal={showModal} handleModal={handleModals}/>
+        <Modal projectObject={cardCreator} id='cardCreator' showModal={showModal} handleModal={handleModals}/>
        
       </ul>
       

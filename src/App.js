@@ -32,7 +32,10 @@ function App() {
     title: "Lista de tareas",
     text: "Aplicación realizada utilizando React, tiene unas tareas por defecto que aparecen al levantar la web y después utilizando la funcionalidad de local storage el usuario puede añadir o quitar tareas,o marcarlas como realizadas. Implementé también un contador de tareas que cambia con las interacciones del usuario."
   }
-
+  const cardCreator = {
+    title: "Generador de tarjetas de visita",
+    text: "Proyecto grupal de Adalab, diseño heredado de las compañeras, nuestra tarea consistió en trasladar el código heredado a React y crear el backend, con NodeJS y la base de datos con SQLite"
+  }
 
 
 
@@ -78,7 +81,8 @@ function App() {
     if (vista.projects) {
       return <Projects showModal={showModal}
         handleModals={handleModals} RandMProject={RandMProject}
-        casaCantoProject={casaCantoProject} taskListProject={taskListProject} />
+        casaCantoProject={casaCantoProject} taskListProject={taskListProject}
+        cardCreator={cardCreator} />
     } else if (vista.summary) {
       return <Summary />
     } else return <Landing />
