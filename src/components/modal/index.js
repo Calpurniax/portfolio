@@ -1,10 +1,10 @@
 import "../../styles/components/modal.scss"
 
-const Modal = ({ projectObject, id, showModal, handleModal, img, img2 }) => {
+const Modal = ({ projectObject, id, showModal, handleModal, img, link }) => {
     const renderImgs = () => {
         if (img.length > 0) {
             return img.map((eachImg, index) => {
-                return <li className="modal__img" key={index}><img className="modal__img" src={eachImg.img} alt={projectObject.title} /><p>{eachImg.text}</p></li>
+                return <li key={index}><img className="modal__img" src={eachImg.img} alt={projectObject.title} /><p className="modal__img__title">{eachImg.text}</p></li>
             })
         }
     }
@@ -24,7 +24,7 @@ const Modal = ({ projectObject, id, showModal, handleModal, img, img2 }) => {
                 <ul>
                     {renderImgs()}
                 </ul>
-                <div><i id={id} className="fa-regular fa-circle-left modal__arrow" onClick={handleClick}></i></div>
+                <div className="modal__buttons"><p><a className="modal__link" href={link}>Visita la web</a></p><i id={id} className="fa-regular fa-circle-left modal__arrow" onClick={handleClick}></i></div>
             </div>
         </article>
 
