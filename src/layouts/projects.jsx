@@ -1,10 +1,14 @@
 import "../styles/layouts/projects.scss";
 import { ProjectsArticle } from "../components/projects-article";
-import rickAndMorty_mob from "../images/r&m/portadaR&M_mobile.png";
-import rickAndMorty_desk  from "../images/r&m/portadaR&M.png";
-import taskList_landing from "../images/task-list/portadaTaskList_desktop.png"
-import casaCanto_landing from "../images/casa-canto/portadaCasaCanto_mobile.png"
-import cardCreator_landing from "../images/card-creator/card-creator-desktop.png"
+import rickAndMorty_mob from "../images/r&m/rym_mobile.png";
+import rickAndMorty_desk  from "../images/r&m/rym_desktop.png";
+import taskList_desk from "../images/task-list/taskList_desktop.png"
+import taskList_mob from "../images/task-list/taskList_mobile.png"
+import casaCanto_mob from "../images/casa-canto/casaCanto_mobile.png";
+import casaCanto_desk from "../images/casa-canto/casaCanto_desktop.png";
+import cardCreator_desk from "../images/card-creator/card-creator_desktop.png";
+import cardCreator_mob from "../images/card-creator/card-creator_mobile.png";
+import cardCreator_landing from "../images/card-creator/card-creator_landing.png"
 import Modal from "../components/modal";
 
 const Projects =({showModal,handleModals, RandMProject, casaCantoProject, taskListProject, cardCreator})=>{
@@ -25,7 +29,7 @@ const Projects =({showModal,handleModals, RandMProject, casaCantoProject, taskLi
         id={'casaCanto'}
         handleModals={handleModals}
         tech={['Wordpress']}
-        img={casaCanto_landing}
+        img={casaCanto_mob}
         alt={'web Casa Canto'}
         link={"https://casa-canto.com/"}
         title={'Casa Canto - alquiler vacacional'}/>
@@ -33,7 +37,7 @@ const Projects =({showModal,handleModals, RandMProject, casaCantoProject, taskLi
         id={'taskList'}
         handleModals={handleModals}
         tech={['React', 'Local Storage']}        
-        img={taskList_landing}
+        img= {taskList_desk}
         alt={'Web para crear tu lista de tareas'}
         link={"https://calpurniax.github.io/lista-de-tareas/"}
         title={'Lista de tareas con local storage'}/>
@@ -41,14 +45,16 @@ const Projects =({showModal,handleModals, RandMProject, casaCantoProject, taskLi
         id={'cardCreator'}
         handleModals={handleModals}
         tech={['React', 'NodeJS']}        
-        img={cardCreator_landing}
+        img={cardCreator_desk}
         alt={'Web para crear tarjetas de visita'}
-        link={"https://calpurniax.github.io/lista-de-tareas/"}
+        link={"https://github.com/Calpurniax/project-promo-r-module-4-team-2"}
         title={'Card Generator: crea tu tarjeta de visita'}/>
-        <Modal projectObject={RandMProject} id='rickAndMorty' showModal={showModal} handleModal={handleModals} link={"https://calpurniax.github.io/modulo-3-evaluacion-final-Calpurniax/"} img={[{img:rickAndMorty_desk, text:"Versión desktop"}]}/>
-        <Modal projectObject={casaCantoProject} id='casaCanto' showModal={showModal} handleModal={handleModals} img={[]}/>
-        <Modal projectObject={taskListProject} id='taskList' showModal={showModal} handleModal={handleModals} img={[]}/>
-        <Modal projectObject={cardCreator} id='cardCreator' showModal={showModal} handleModal={handleModals} img={[]}/>
+        <Modal projectObject={RandMProject} id='rickAndMorty' showModal={showModal} handleModal={handleModals} link="https://calpurniax.github.io/modulo-3-evaluacion-final-Calpurniax/" img={[{img:rickAndMorty_desk, text:"Versión desktop"}]}/>
+        <Modal projectObject={casaCantoProject} id='casaCanto' showModal={showModal} handleModal={handleModals} link="https://casa-canto.com/" img={[{img:casaCanto_desk, text:"Versión desktop"}]}/>
+        <Modal projectObject={taskListProject} id='taskList' showModal={showModal} handleModal={handleModals} link="https://calpurniax.github.io/lista-de-tareas/"  img={[{img:taskList_mob, text:"Versión para móvil"}]}/>
+        <Modal projectObject={cardCreator} id='cardCreator' showModal={showModal} handleModal={handleModals} 
+        link="https://github.com/Calpurniax/project-promo-r-module-4-team-2" 
+        img={[{img:cardCreator_landing, text:"Landing"}, {img:cardCreator_mob, text:"Versión para móvil"}]}/>
        
       </ul>
       
