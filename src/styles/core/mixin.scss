@@ -16,6 +16,7 @@
 @mixin linkHover {
     &:hover {
         color: $pink-color;
+        cursor: pointer;
     }
 }
 

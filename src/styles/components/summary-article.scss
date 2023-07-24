@@ -2,17 +2,20 @@
 @import "../core/variables.scss";
 
 .c-summaryArticle {
-    margin-bottom: 0.7rem;
+    margin-bottom: 1.7rem;
+    margin-left: 1rem;
 
     &__title {
-        margin-bottom: 0.3rem;
+        margin-bottom: 0.5rem;
     }
 
     &__dates {
         @include italicText;
+        margin-bottom: 0.3rem;
     }
 
     &__text {
         @include regularText;
+
     }
 }

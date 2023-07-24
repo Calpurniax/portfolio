@@ -13,7 +13,13 @@
     }
 
     &__text {
-        margin-bottom: 0.7rem;
+        margin-bottom: 1.7rem;
+
+        &__link {
+            color: $darkPink-color;
+            text-decoration: none;
+            @include linkHover;
+        }
     }
 
     &__box {
