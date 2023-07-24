@@ -7,6 +7,7 @@
     border-radius: 10px;
     font-family: $font-text;
     margin: 0 2rem 1.5rem 2rem;
+    padding-bottom: 1rem;
 
     &__container {
         padding: 1rem 0 1rem 0.5rem;
@@ -49,9 +50,4 @@
         @include linkHover;
     }
 
-    &__borderBottom {
-        margin: 0 6rem 0 6rem;
-        padding-top: 1rem;
-        border-bottom: solid 0.1rem $blue-color;
-    }
 }

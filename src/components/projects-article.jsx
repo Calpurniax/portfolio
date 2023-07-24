@@ -23,7 +23,7 @@ export const ProjectsArticle = (props) => {
                 <img src={props.img} alt={props.alt} className="projects__article__img"/>
             </div>
             <a href={props.link} className="projects__article__title">{props.title}</a>
-            <div className="projects__article__borderBottom"></div>
+           
         </article>
     </li>
 )};

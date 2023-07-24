@@ -5,6 +5,8 @@
     margin: 0 1rem 0 1rem;
     color: $blue-color;
     font-family: $font-title;
+    overflow-y: scroll;
+    height: 100%;
 
     &__title {
         text-align: center;
@@ -25,6 +27,7 @@
     &__box {
         display: grid;
         grid-template-columns: 1fr 1fr;
+
 
         &__border {
             border-right: solid $blue-color 0.1rem;

@@ -26,15 +26,15 @@ function App() {
   }
   const casaCantoProject = {
     title: "Casa Canto, alquiler vacacional",
-    text: "Página web creada con wordpress para enseñar una casa de turismo, con información de contacto y una galería de fotos, el diseño y la paleta de colores busca transmitir elegancia y sobriedad"
+    text: "Página web creada con wordpress, con información de contacto y una galería de fotos, el diseño y la paleta de colores busca transmitir elegancia y sobriedad"
   }
   const taskListProject = {
     title: "Lista de tareas",
-    text: "Aplicación realizada utilizando React, tiene unas tareas por defecto que aparecen al levantar la web y después utilizando la funcionalidad de local storage el usuario puede añadir o quitar tareas,o marcarlas como realizadas. Implementé también un contador de tareas que cambia con las interacciones del usuario."
+    text: "Aplicación realizada utilizando React, tiene unas tareas por defecto que aparecen al levantar la web y después, utilizando la funcionalidad de local storage, el usuario puede añadir/ quitar tareas o marcarlas como realizadas. Hay implementado también un contador que cambia con las interacciones del usuario."
   }
   const cardCreator = {
     title: "Generador de tarjetas de visita",
-    text: "Proyecto grupal de Adalab, diseño heredado de las compañeras, nuestra tarea consistió en trasladar el código heredado a React y crear el backend, con NodeJS y la base de datos con SQLite"
+    text: "Proyecto grupal de Adalab, con diseño heredado de otras compañeras. Nuestra tarea consistió en trasladar el código heredado a React, generando una lógica nueva, además crear el backend con NodeJS, y la base de datos con SQLite"
   }
 
 
@@ -92,10 +92,9 @@ function App() {
       <Header />
       <div className='mainContainer'>
         <Nav handleViews={handleViews} vista={vista} />
-        <main>
+        <main className='main'>
           {rendingViews()}
         </main>
-        {/* <Footer /> */}
       </div>
     </div>
   );
