@@ -4,8 +4,10 @@
     height: 50vh;
 
     &__title {
+        text-align: center;
+        padding: 1rem;
+        margin-bottom: 0.5rem;
         font-size: 1.8rem;
-        padding-bottom: 1rem;
     }
 
     &__container {

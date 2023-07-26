@@ -14,7 +14,7 @@ const Projects =({showModal,handleModals, RandMProject, casaCantoProject, taskLi
  
    return (
     <section className="projects">
-      <h3 className="projects__title">Muestras de proyectos</h3>
+      <h2 className="projects__title">Muestras de proyectos</h2>
       <ul className="projects__container">
         <ProjectsArticle
         id={'rickAndMorty'}

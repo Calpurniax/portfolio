@@ -12,10 +12,7 @@ const SummaryContainer=({title, article})=>{
     <section className="c-summaryContainer">
         <h3 className="c-summaryContainer__title">{title}</h3>
        <ul className="c-summaryContainer__list">
-        {renderArticles()}
-            {/* <SummaryArticle object={article1}/>
-            <SummaryArticle object={article2}/>
-            <SummaryArticle object={article3}/> */}
+        {renderArticles()}            
        </ul>
     </section>
     )
