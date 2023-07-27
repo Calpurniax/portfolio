@@ -5,9 +5,7 @@ const SummaryContainer=({title, article})=>{
         return article.map(eachArticle=>{
             return  <SummaryArticle object={eachArticle}/>
         })
-        }
-            
-    
+        }          
     return(
     <section className="c-summaryContainer">
         <h3 className="c-summaryContainer__title">{title}</h3>

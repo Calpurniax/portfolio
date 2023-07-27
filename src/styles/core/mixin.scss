@@ -1,5 +1,11 @@
 @import "../core/variables.scss";
 
+@mixin smallphone {
+    @media all and (max-height:800px) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media all and (min-width:768px) {
         @content;
