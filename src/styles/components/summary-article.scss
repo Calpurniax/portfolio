@@ -8,15 +8,27 @@
     &__title {
         font-size: 1.2rem;
         margin-bottom: 0.5rem;
+
+        @include tablet {
+            font-size: 1.5rem;
+        }
     }
 
     &__dates {
         @include italicText;
         margin-bottom: 0.3rem;
+
+        @include tablet {
+            font-size: 1.3rem;
+        }
     }
 
     &__text {
         @include regularText;
+
+        @include tablet {
+            font-size: 1.3rem;
+        }
 
     }
 }

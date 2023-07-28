@@ -12,3 +12,9 @@
     }
 
 }
+
+.mainContainer {
+    @include tablet {
+        width: 100%;
+    }
+}

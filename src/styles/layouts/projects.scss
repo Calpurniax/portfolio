@@ -1,7 +1,13 @@
+@import "../core/mixin.scss";
+
 .projects {
     padding: 0.3rem;
     text-align: center;
     height: 50vh;
+
+    @include tablet {
+        height: 80vh;
+    }
 
     &__title {
         text-align: center;
