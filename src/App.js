@@ -4,7 +4,7 @@ import Nav from './components/nav'
 import { Landing } from './layouts/landing'
 import { Summary } from './layouts/summary';
 import Projects from './layouts/projects';
-// import { Footer } from './components/footer'
+import pdfDocument from './documents/sofia-gracia.pdf'
 import { useState } from 'react';
 
 function App() {
@@ -85,7 +85,7 @@ function App() {
         cardCreator={cardCreator} />
     } else if (vista.summary) {
       return <Summary />
-    } else return <Landing />
+    } else return <Landing pdfDocument={pdfDocument} />
   }
   return (
     <div className="App">
