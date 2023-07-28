@@ -5,6 +5,10 @@
         display: flex;
         justify-content: flex-end;
         margin-right: 3rem;
+
+        @include desktop {
+            margin-right: 4rem;
+        }
     }
 
     &__link {
