@@ -1,0 +1,13 @@
+@import "../core/mixin.scss";
+
+.buttons {
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 3rem;
+    }
+
+    &__link {
+        @include button
+    }
+}
