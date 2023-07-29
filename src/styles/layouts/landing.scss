@@ -2,6 +2,7 @@
 @import "../core/variables.scss";
 
 .landing {
+    height: 70vh;
     padding: 1rem;
     color: $blue-color;
     font-size: 1.3rem;
@@ -9,6 +10,9 @@
 
     @include tablet {
         font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     &__title {
@@ -23,5 +27,9 @@
     &__text {
         text-align: left;
         padding: 0 1.5rem 1rem 1.5rem;
+
+        @include desktop {
+            padding: 0 1.5rem 3rem 1.5rem;
+        }
     }
 }

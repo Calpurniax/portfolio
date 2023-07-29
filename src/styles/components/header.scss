@@ -15,6 +15,10 @@
         justify-content: center;
     }
 
+    @include desktop {
+        width: 35vw;
+    }
+
 
     &__border {
         border: 0.1rem solid $blue-color;
@@ -53,10 +57,18 @@
 
     &__title {
         font-size: 2rem;
+
+        @include desktop {
+            font-size: 2rem;
+        }
     }
 
     &__text {
         font-size: 1.3rem;
+
+        @include desktop {
+            font-size: 1.5rem;
+        }
     }
 
     &__iconList {

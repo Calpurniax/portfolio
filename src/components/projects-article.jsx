@@ -13,10 +13,10 @@ export const ProjectsArticle = (props) => {
         props.handleModals(ev.currentTarget.id)
       }
     return(
-    <li>
+    <li  className="projects__article__wrap">
         <article className="projects__article">
             <div className="projects__article__container">
-                <div><i className="fa-solid fa-magnifying-glass-plus projects__article__icon" id={props.id} onClick={handleOpenModal}></i></div>
+                <div><i className="fa-solid fa-arrow-up-right-from-square projects__article__icon" id={props.id} onClick={handleOpenModal}></i></div>
                 <div className="projects__article__techDiv">        
                     {renderTechs()}
                 </div>

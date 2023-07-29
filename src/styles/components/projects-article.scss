@@ -9,6 +9,14 @@
     margin: 0 2rem 1.5rem 2rem;
     padding-bottom: 1rem;
 
+    @include tablet {
+        font-size: 1.3rem;
+    }
+
+    @include bigDesktop {
+        font-size: 1.8rem;
+    }
+
     &__container {
         padding: 1rem 0 1rem 0.5rem;
         display: grid;
@@ -17,8 +25,24 @@
     }
 
     &__icon {
+        color: $dark-color;
+        background-color: $salmon-color;
+        padding: 0.5rem;
+        border-radius: 50%;
         cursor: pointer;
-        @include linkHover;
+
+        &:hover {
+            color: $lightPink-color
+        }
+
+        @include tablet {
+            font-size: 1.3rem;
+        }
+
+        @include bigDesktop {
+            margin-left: 1.5rem;
+            font-size: 1.5rem;
+        }
     }
 
     &__techDiv {
@@ -33,6 +57,10 @@
         justify-content: flex-end;
         gap: 1rem;
         color: $dark-color;
+
+        @include bigDesktop {
+            margin-left: 1.5rem;
+        }
     }
 
     &__img {
@@ -42,6 +70,10 @@
         width: 75%;
         border-radius: 10px;
         padding-bottom: 0.5rem;
+
+        @include desktop {
+            width: 45%;
+        }
     }
 
     &__title {

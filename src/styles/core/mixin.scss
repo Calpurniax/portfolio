@@ -18,6 +18,13 @@
     }
 }
 
+@mixin bigDesktop {
+    @media all and (min-width:2100px) {
+        @content;
+    }
+}
+
+
 @mixin linkHover {
     &:hover {
         color: $pink-color;
