@@ -11,14 +11,13 @@
         width: 55vw;
         height: 100vh;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        align-items: center;
     }
 
     @include desktop {
         width: 35vw;
-    }
 
+    }
 
     &__border {
         border: 0.1rem solid $blue-color;
@@ -34,6 +33,7 @@
             align-content: center;
             justify-content: center;
             height: 95vh;
+            gap: 2rem;
         }
     }
 
@@ -53,6 +53,10 @@
         flex-direction: column;
         overflow: hidden;
         gap: 0.7rem;
+
+        @include tablet {
+            gap: 1rem;
+        }
     }
 
     &__title {
@@ -80,7 +84,6 @@
 
         &__icon {
             @include desktop {
-
                 font-size: 1.5rem;
             }
         }
