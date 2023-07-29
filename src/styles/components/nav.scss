@@ -4,6 +4,10 @@
 .c-nav {
     padding: 1rem;
 
+    @include desktop {
+        padding: 3rem;
+    }
+
     &__box {
         list-style-type: none;
         display: grid;
@@ -11,20 +15,13 @@
         border-bottom: solid 0.1rem $blue-color;
         margin: 0 0.3rem 0 0.3rem;
 
-
         &__link {
             text-align: center;
             padding-bottom: 1rem;
             font-family: $font-title;
             padding-top: 1rem;
-            padding-bottom: 1rem;
-
-            @include tablet {
-                padding-top: 2rem;
-                font-size: 1.5rem
-            }
-
             @include linkHover;
+            font-size: 1.3rem;
         }
     }
 }

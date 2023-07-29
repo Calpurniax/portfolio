@@ -48,10 +48,10 @@ const Projects =({showModal,handleModals, RandMProject, casaCantoProject, taskLi
         alt={'Web para crear tarjetas de visita'}
         link={"https://github.com/Calpurniax/project-promo-r-module-4-team-2"}
         title={'Card Generator: crea tu tarjeta de visita'}/>
-        <Modal projectObject={RandMProject} id='rickAndMorty' showModal={showModal} handleModal={handleModals} link="https://calpurniax.github.io/modulo-3-evaluacion-final-Calpurniax/" img={{img:rickAndMorty_desk, text:"Versión desktop"}}/>
-        <Modal projectObject={casaCantoProject} id='casaCanto' showModal={showModal} handleModal={handleModals} link="https://casa-canto.com/" img={{img:casaCanto_desk, text:"Versión desktop"}}/>
-        <Modal projectObject={taskListProject} id='taskList' showModal={showModal} handleModal={handleModals} link="https://calpurniax.github.io/lista-de-tareas/"  img={{img:taskList_mob, text:"Versión para móvil"}}/>
-        <Modal projectObject={cardCreator} id='cardCreator' showModal={showModal} handleModal={handleModals} link="https://github.com/Calpurniax/project-promo-r-module-4-team-2" img={{img:cardCreator_mob, text:"Versión para móvil"}}/>
+        <Modal projectObject={RandMProject} id='rickAndMorty' showModal={showModal} handleModal={handleModals} link="https://calpurniax.github.io/modulo-3-evaluacion-final-Calpurniax/" img={{img:rickAndMorty_desk, text:"Versión desktop"}} imgClass='modal__img desktop'/>
+        <Modal projectObject={casaCantoProject} id='casaCanto' showModal={showModal} handleModal={handleModals} link="https://casa-canto.com/" img={{img:casaCanto_desk, text:"Versión desktop"}} imgClass='modal__img desktop'/>
+        <Modal projectObject={taskListProject} id='taskList' showModal={showModal} handleModal={handleModals} link="https://calpurniax.github.io/lista-de-tareas/"  img={{img:taskList_mob, text:"Versión para móvil"}} imgClass='modal__img mobile'/>
+        <Modal projectObject={cardCreator} id='cardCreator' showModal={showModal} handleModal={handleModals} link="https://github.com/Calpurniax/project-promo-r-module-4-team-2" img={{img:cardCreator_mob, text:"Versión para móvil"}} imgClass='modal__img mobile'/>
        
       </ul>
       

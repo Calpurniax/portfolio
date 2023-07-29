@@ -10,11 +10,7 @@
     padding-bottom: 1rem;
 
     @include tablet {
-        font-size: 1.3rem;
-    }
-
-    @include bigDesktop {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 
     &__container {
@@ -39,9 +35,10 @@
             font-size: 1.3rem;
         }
 
-        @include bigDesktop {
-            margin-left: 1.5rem;
-            font-size: 1.5rem;
+        @include desktop {
+            margin-left: 3rem;
+            margin-top: 1.5rem;
+            font-size: 1.2rem;
         }
     }
 
@@ -58,8 +55,8 @@
         gap: 1rem;
         color: $dark-color;
 
-        @include bigDesktop {
-            margin-left: 1.5rem;
+        @include desktop {
+            margin-left: 3rem;
         }
     }
 
@@ -81,5 +78,4 @@
         color: $dark-color;
         @include linkHover;
     }
-
 }
