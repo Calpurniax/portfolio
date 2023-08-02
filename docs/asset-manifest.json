@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.d421b788.css",
-    "main.js": "/static/js/main.44e08635.js",
-    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/casaCanto_mobile.png": "/static/media/casaCanto_mobile.fcba966bc74846bb886e.png",
-    "static/media/sofia-gracia.pdf": "/static/media/sofia-gracia.4a2635252ab4b3511bd4.pdf",
-    "static/media/card-creator_desktop.png": "/static/media/card-creator_desktop.fa1223c6fdea4f60c403.png",
-    "static/media/rym_desktop.png": "/static/media/rym_desktop.7ae934eec714ad7f5a4f.png",
-    "static/media/card-creator_mobile.png": "/static/media/card-creator_mobile.d6c12bc6b1917d51152c.png",
-    "static/media/rym_mobile.png": "/static/media/rym_mobile.cfe3f0671dbacec2ba01.png",
-    "static/media/casaCanto_desktop.png": "/static/media/casaCanto_desktop.c5f41dae4d410927897a.png",
-    "static/media/foto-sofia.jpg": "/static/media/foto-sofia.074a301d97980aededb9.jpg",
-    "static/media/taskList_mobile.png": "/static/media/taskList_mobile.f8504c8e73a35e51a4fa.png",
-    "static/media/taskList_desktop.png": "/static/media/taskList_desktop.6c1d46eb01b607cb6178.png",
-    "index.html": "/index.html",
-    "main.d421b788.css.map": "/static/css/main.d421b788.css.map",
-    "main.44e08635.js.map": "/static/js/main.44e08635.js.map",
-    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "./static/css/main.d421b788.css",
+    "main.js": "./static/js/main.11b86c77.js",
+    "static/js/787.1ed0c42c.chunk.js": "./static/js/787.1ed0c42c.chunk.js",
+    "static/media/casaCanto_mobile.png": "./static/media/casaCanto_mobile.fcba966bc74846bb886e.png",
+    "static/media/sofia-gracia.pdf": "./static/media/sofia-gracia.4a2635252ab4b3511bd4.pdf",
+    "static/media/card-creator_desktop.png": "./static/media/card-creator_desktop.fa1223c6fdea4f60c403.png",
+    "static/media/rym_desktop.png": "./static/media/rym_desktop.7ae934eec714ad7f5a4f.png",
+    "static/media/card-creator_mobile.png": "./static/media/card-creator_mobile.d6c12bc6b1917d51152c.png",
+    "static/media/rym_mobile.png": "./static/media/rym_mobile.cfe3f0671dbacec2ba01.png",
+    "static/media/casaCanto_desktop.png": "./static/media/casaCanto_desktop.c5f41dae4d410927897a.png",
+    "static/media/foto-sofia.jpg": "./static/media/foto-sofia.074a301d97980aededb9.jpg",
+    "static/media/taskList_mobile.png": "./static/media/taskList_mobile.f8504c8e73a35e51a4fa.png",
+    "static/media/taskList_desktop.png": "./static/media/taskList_desktop.6c1d46eb01b607cb6178.png",
+    "index.html": "./index.html",
+    "main.d421b788.css.map": "./static/css/main.d421b788.css.map",
+    "main.11b86c77.js.map": "./static/js/main.11b86c77.js.map",
+    "787.1ed0c42c.chunk.js.map": "./static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d421b788.css",
-    "static/js/main.44e08635.js"
+    "static/js/main.11b86c77.js"
   ]
 }
