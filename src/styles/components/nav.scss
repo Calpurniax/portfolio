@@ -4,10 +4,6 @@
 .c-nav {
     padding: 1rem;
 
-    @include desktop {
-        padding: 3rem;
-    }
-
     &__box {
         list-style-type: none;
         display: grid;

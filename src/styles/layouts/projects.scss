@@ -1,4 +1,5 @@
 @import "../core/mixin.scss";
+@import "../core/variables.scss";
 
 .projects {
     padding: 0.3rem;
@@ -10,13 +11,14 @@
     }
 
     &__title {
+        font-family: $font-title;
         text-align: center;
         padding: 1rem;
         margin-bottom: 0.5rem;
         font-size: 1.5rem;
 
-        @include desktop {
-            font-size: 1.7rem;
+        @include tablet {
+            font-size: 1.6rem;
         }
     }
 

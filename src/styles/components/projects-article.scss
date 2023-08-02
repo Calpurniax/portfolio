@@ -25,15 +25,13 @@
         background-color: $salmon-color;
         padding: 0.5rem;
         border-radius: 50%;
+        font-size: 1rem;
         cursor: pointer;
 
         &:hover {
             color: $lightPink-color
         }
 
-        @include tablet {
-            font-size: 1.3rem;
-        }
 
         @include desktop {
             margin-left: 3rem;
