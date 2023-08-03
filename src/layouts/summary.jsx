@@ -4,8 +4,8 @@ import  SummaryContainer  from "../components/summary-container"
 export const Summary =()=>(
     <section className="summary">
         <h2 className="summary__title">Vida profesional</h2>
-        <p className="summary__text">Pequeño resumen de mi trayectoria profesional, además he hecho <a className="summary__text__link" href="https://www.youtube.com/watch?v=gAFH1xrQZrc&ab_channel=GhettoFilmSchool" target="_blank" rel="noreferrer">cortos</a>
-        (en diferentes puestos) y en mis ratos libres he tocado<a className="summary__text__link" href="https://www.youtube.com/watch?v=3Lr429ePnpw&ab_channel=IsabelRomeoTaiko" target="_blank" rel="noreferrer"> percusión japonesa</a> (taiko)</p>
+        <p className="summary__text">Pequeño resumen de mi trayectoria profesional, en mis ratos libres me encanta tocar <a className="summary__text__link" href="https://www.youtube.com/watch?v=3Lr429ePnpw&ab_channel=IsabelRomeoTaiko" target="_blank" rel="noreferrer"> percusión japonesa</a> (taiko) y cuidar del huerto comunitario. He hecho cortos, como <a className="summary__text__link" href="https://www.youtube.com/watch?v=gAFH1xrQZrc&ab_channel=GhettoFilmSchool" target="_blank" rel="noreferrer">este</a> en el que fui directora de fotografía, pero también he estado en otros puestos (cámara, iluminación o producción)
+        </p>
         <div className="summary__box">         
             <div className="summary__box__border">
                 <SummaryContainer title="Formación" 
@@ -18,7 +18,7 @@ export const Summary =()=>(
 
             <SummaryContainer title="Experiencia" article={[{title:"Front-End Developer en Portalferry (Prácticas)", dates:"Actualmente", text:"Reconstruir y actualizar el front con React"},
             {title:"Técnico en Ovide BS", dates:"2016 - 2022", text:'Preparación de equipos audiovisuales, asistencia al cliente, jefa técnica en "Encuentros Inesperados" para La Sexta TV'},
-            {title:"Monitora de prácticas en Escuela TAI", dates:"2012-2016", text:"Puente de comunicación entre los alumnos y la escuela, resolución de problemas y supervisión"}]}      
+            {title:"Responsable de prácticas audiovisuales en Escuela TAI", dates:"2012-2016", text:"Puente de comunicación entre los alumnos y la escuela, resolución de problemas y supervisión"}]}      
             />
         </div>
     </section>
