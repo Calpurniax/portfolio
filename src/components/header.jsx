@@ -8,7 +8,7 @@ export const Header =()=>(
             <img className = "c-header__img" alt="Sofía Gracia" src={sofiaPhoto}></img>
             <div className="c-header__textBox">
                 <h1 className = "c-header__title">Sofía Gracia</h1>
-                <p className = "c-header__text">Front-end developer from Madrid (Spain)</p>
+                <p className = "c-header__text">Desarrolladora Web en Madrid (España)</p>
                 <ul className = "c-header__iconList">
                     <li>
                         <Icon link="https://github.com/Calpurniax"

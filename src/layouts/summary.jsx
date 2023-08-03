@@ -16,7 +16,7 @@ export const Summary =()=>(
                 />
             </div>
 
-            <SummaryContainer title="Experiencia" article={[{title:"Frontend Developer en Portalferry (Prácticas)", dates:"Actualmente", text:"Reconstruir y actualizar el front con React"},
+            <SummaryContainer title="Experiencia" article={[{title:"Front-End Developer en Portalferry (Prácticas)", dates:"Actualmente", text:"Reconstruir y actualizar el front con React"},
             {title:"Técnico en Ovide BS", dates:"2016 - 2022", text:'Preparación de equipos audiovisuales, asistencia al cliente, jefa técnica en "Encuentros Inesperados" para La Sexta TV'},
             {title:"Monitora de prácticas en Escuela TAI", dates:"2012-2016", text:"Puente de comunicación entre los alumnos y la escuela, resolución de problemas y supervisión"}]}      
             />
