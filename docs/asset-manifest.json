@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.d421b788.css",
+    "main.css": "./static/css/main.323d914a.css",
     "main.js": "./static/js/main.11b86c77.js",
     "static/js/787.1ed0c42c.chunk.js": "./static/js/787.1ed0c42c.chunk.js",
     "static/media/casaCanto_mobile.png": "./static/media/casaCanto_mobile.fcba966bc74846bb886e.png",
@@ -14,12 +14,12 @@
     "static/media/taskList_mobile.png": "./static/media/taskList_mobile.f8504c8e73a35e51a4fa.png",
     "static/media/taskList_desktop.png": "./static/media/taskList_desktop.6c1d46eb01b607cb6178.png",
     "index.html": "./index.html",
-    "main.d421b788.css.map": "./static/css/main.d421b788.css.map",
+    "main.323d914a.css.map": "./static/css/main.323d914a.css.map",
     "main.11b86c77.js.map": "./static/js/main.11b86c77.js.map",
     "787.1ed0c42c.chunk.js.map": "./static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d421b788.css",
+    "static/css/main.323d914a.css",
     "static/js/main.11b86c77.js"
   ]
 }
