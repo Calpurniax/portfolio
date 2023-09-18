@@ -18,6 +18,7 @@ function App() {
     casaCanto: false,
     taskList: false,
     cardCreator: false,
+    restaurantApp:false
   })
   const RandMProject =
   {
@@ -35,6 +36,10 @@ function App() {
   const cardCreator = {
     title: "Generador de tarjetas de visita",
     text: "Proyecto grupal de Adalab, con diseño heredado de otras compañeras. Nuestra tarea consistió en trasladar el código heredado a React, generando una lógica nueva, además crear el backend con NodeJS, y la base de datos con SQLite"
+  }
+  const restaurantApp ={
+    title: "Diseño para una app de restaurantes",
+    text: "Maquetación para una web de gestión de reservas en hostelería, sólo tiene HTML y Sass, usando React con Vite. Es un diseño totalmente mío, con vistas a una buena experiencia de usuario"
   }
 
 
@@ -82,7 +87,7 @@ function App() {
       return <Projects showModal={showModal}
         handleModals={handleModals} RandMProject={RandMProject}
         casaCantoProject={casaCantoProject} taskListProject={taskListProject}
-        cardCreator={cardCreator} />
+        cardCreator={cardCreator} restaurantApp={restaurantApp} />
     } else if (vista.summary) {
       return <Summary />
     } else return <Landing pdfDocument={pdfDocument} />
