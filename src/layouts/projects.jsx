@@ -21,7 +21,7 @@ const Projects =({showModal,handleModals, RandMProject, casaCantoProject, taskLi
         <ProjectsArticle
         id={'rickAndMorty'}
         handleModals={handleModals}
-        tech={['React','Fetch']}        
+        tech={['React','API']}        
         img={rickAndMorty_mob}
         alt={'Buscador de personajes de Rick and Morty'}
         link={"https://calpurniax.github.io/modulo-3-evaluacion-final-Calpurniax/"}

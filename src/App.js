@@ -31,7 +31,7 @@ function App() {
   }
   const taskListProject = {
     title: "Lista de tareas",
-    text: "Aplicación realizada utilizando React, tiene unas tareas por defecto que aparecen al levantar la web y después, utilizando la funcionalidad de local storage, el usuario puede añadir/ quitar tareas o marcarlas como realizadas. Hay implementado también un contador que cambia con las interacciones del usuario."
+    text: "Aplicación realizada utilizando React, tiene unas tareas por defecto que aparecen al levantar la web y después, utilizando la funcionalidad de local storage, el usuario puede añadir/ quitar tareas o marcarlas como realizadas. Hay implementado también un contador que cambia con las interacciones del usuario y un modal para confirmar la eliminación de una tarea de la lista."
   }
   const cardCreator = {
     title: "Generador de tarjetas de visita",
