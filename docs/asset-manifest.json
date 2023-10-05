@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.323d914a.css",
-    "main.js": "./static/js/main.406d93b0.js",
+    "main.js": "./static/js/main.3ef82594.js",
     "static/js/787.1ed0c42c.chunk.js": "./static/js/787.1ed0c42c.chunk.js",
     "static/media/restApp_mobile.png": "./static/media/restApp_mobile.5cfbb18b91a8e6107fd5.png",
     "static/media/restApp_desktop.png": "./static/media/restApp_desktop.ed893c77b82189abb969.png",
@@ -15,13 +15,15 @@
     "static/media/foto-sofia.jpg": "./static/media/foto-sofia.074a301d97980aededb9.jpg",
     "static/media/taskList_mobile.png": "./static/media/taskList_mobile.f8504c8e73a35e51a4fa.png",
     "static/media/taskList_desktop.png": "./static/media/taskList_desktop.6c1d46eb01b607cb6178.png",
+    "static/media/form_mob.png": "./static/media/form_mob.ff35a633841ded228c55.png",
+    "static/media/form_desk.png": "./static/media/form_desk.b966c49ab8b7e7e0115d.png",
     "index.html": "./index.html",
     "main.323d914a.css.map": "./static/css/main.323d914a.css.map",
-    "main.406d93b0.js.map": "./static/js/main.406d93b0.js.map",
+    "main.3ef82594.js.map": "./static/js/main.3ef82594.js.map",
     "787.1ed0c42c.chunk.js.map": "./static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.323d914a.css",
-    "static/js/main.406d93b0.js"
+    "static/js/main.3ef82594.js"
   ]
 }
