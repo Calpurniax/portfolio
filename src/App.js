@@ -41,8 +41,10 @@ function App() {
     title: "Diseño para una app de restaurantes",
     text: "Maquetación para una web de gestión de reservas en hostelería, sólo tiene HTML y Sass, usando React con Vite. Es un diseño totalmente mío, con vistas a una buena experiencia de usuario"
   }
-
-
+  const secureForm ={
+    title: "Aplicación full-stack orientada a la seguridad web",
+    text: "Desarrollado en MERN con medidas para evitar las vulnerabilidades marcadas por OWASP, como ataques de fuerza bruta o de DoS, XSS etc. Aún no está desplegado pero se puede ver el código en Github"
+  }
 
 
   const handleViewLanding = () => {
@@ -87,7 +89,7 @@ function App() {
       return <Projects showModal={showModal}
         handleModals={handleModals} RandMProject={RandMProject}
         casaCantoProject={casaCantoProject} taskListProject={taskListProject}
-        cardCreator={cardCreator} restaurantApp={restaurantApp} />
+        cardCreator={cardCreator} restaurantApp={restaurantApp} secureForm={secureForm}/>
     } else if (vista.summary) {
       return <Summary />
     } else return <Landing pdfDocument={pdfDocument} />

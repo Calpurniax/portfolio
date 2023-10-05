@@ -10,9 +10,11 @@ import cardCreator_desk from "../images/card-creator/card-creator_desktop.png";
 import cardCreator_mob from "../images/card-creator/card-creator_mobile.png";
 import restApp_mob from "../images/restaurant-app/restApp_mobile.png";
 import restApp_desk from "../images/restaurant-app/restApp_desktop.png";
+import secForm_mob from "../images/secure-form/form_mob.png";
+import secForm_desk from "../images/secure-form/form_desk.png"
 import Modal from "../components/modal";
 
-const Projects =({showModal,handleModals, RandMProject, casaCantoProject, taskListProject, cardCreator, restaurantApp})=>{
+const Projects =({showModal,handleModals, RandMProject, casaCantoProject, taskListProject, cardCreator, restaurantApp, secureForm})=>{
  
    return (
     <section className="projects">
@@ -51,6 +53,14 @@ const Projects =({showModal,handleModals, RandMProject, casaCantoProject, taskLi
         link={"https://calpurniax.github.io/restaurant_app/"}
         title={'Diseño para una aplicación de reservas en restaurantes'}/>
          <ProjectsArticle
+        id={'secureForm'}
+        handleModals={handleModals}
+        tech={['MERN', 'Tailwind CSS']}        
+        img= {secForm_mob}
+        alt={'Aplicación full-stack con formulario de contacto'}
+        link={"https://github.com/Calpurniax/secure_form"}
+        title={'Aplicación web con implementaciones para minimizar las posibles vulnerabilidades'}/>
+         <ProjectsArticle
         id={'cardCreator'}
         handleModals={handleModals}
         tech={['React', 'NodeJS']}        
@@ -62,9 +72,9 @@ const Projects =({showModal,handleModals, RandMProject, casaCantoProject, taskLi
         <Modal projectObject={casaCantoProject} id='casaCanto' showModal={showModal} handleModal={handleModals} link="https://casa-canto.com/" img={{img:casaCanto_desk, text:"Versión desktop"}} imgClass='modal__img desktop'/>
         <Modal projectObject={taskListProject} id='taskList' showModal={showModal} handleModal={handleModals} link="https://calpurniax.github.io/lista-de-tareas/"  img={{img:taskList_mob, text:"Versión para móvil"}} imgClass='modal__img mobile'/>
         <Modal projectObject={cardCreator} id='cardCreator' showModal={showModal} handleModal={handleModals} link="https://github.com/Calpurniax/project-promo-r-module-4-team-2" img={{img:cardCreator_mob, text:"Versión para móvil"}} imgClass='modal__img mobile'/>
-        <Modal projectObject={restaurantApp} id='restaurantApp' showModal={showModal} handleModal={handleModals} link="https://calpurniax.github.io/restaurant_app/" img={{img:restApp_mob, text:"Versión para móvil"}} imgClass='modal__img mobile'/>       
-      </ul>
-      
+        <Modal projectObject={restaurantApp} id='restaurantApp' showModal={showModal} handleModal={handleModals} link="https://calpurniax.github.io/restaurant_app/" img={{img:restApp_mob, text:"Versión para móvil"}} imgClass='modal__img mobile'/>     
+        <Modal projectObject={secureForm} id='secureForm' showModal={showModal} handleModal={handleModals} link="https://github.com/Calpurniax/secure_form/" img={{img:secForm_desk, text:"Vista del dashboard del administrador en desktop"}} imgClass='modal__img desktop'/>     
+      </ul>      
     </section>
    )
 }
