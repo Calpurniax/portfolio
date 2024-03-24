@@ -1,6 +1,6 @@
 import "../../styles/components/modal.scss"
 
-const Modal = ({ projectObject, id, showModal, handleModal, img, link, imgClass }) => {
+const Modal = ({ projectObject, id, showModal, handleModal, img, imgClass }) => {
 
     const handleClick = (ev) => {
         handleModal(ev.currentTarget.id)
@@ -21,7 +21,7 @@ const Modal = ({ projectObject, id, showModal, handleModal, img, link, imgClass 
                         <p className="modal__img__title">{img.text}</p>
                     </div>
                 </div>
-                <div className="modal__buttons"><p><a className="modal__link" href={link} target="_blank" rel="noreferrer">Visita la web</a></p><i id={id} className="fa-regular fa-circle-left modal__arrow" onClick={handleClick}></i></div>
+                <div className="modal__buttons"><p><a className="modal__link" href={projectObject.link} target="_blank" rel="noreferrer">Visita la web</a></p><i id={id} className="fa-regular fa-circle-left modal__arrow" onClick={handleClick}></i></div>
             </div>
         </article>
 
