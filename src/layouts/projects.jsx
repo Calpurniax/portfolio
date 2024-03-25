@@ -16,9 +16,11 @@ import secForm_mob from "../images/secure-form/form_mob.png";
 import secForm_desk from "../images/secure-form/form_desk.png"
 import af_pictures_desk from "../images/af_pictures/afpictures_desk.png";
 import af_pictures_mob from "../images/af_pictures/afpictures_mob.png"
+import abito_mob from "../images/abito/abito_mob.png";
+import abito_desk from "../images/abito/abito_deskt.png"
 import Modal from "../components/modal";
 
-const Projects =({showModal,handleModals, RandMProject, matchPointService, casaCantoProject, taskListProject, cardCreator, restaurantApp, afPictures,secureForm})=>{
+const Projects =({showModal,handleModals, RandMProject, matchPointService, casaCantoProject, taskListProject, cardCreator, restaurantApp, afPictures, abitoProject, secureForm})=>{
  
    return (
     <section className="projects">
@@ -78,6 +80,15 @@ const Projects =({showModal,handleModals, RandMProject, matchPointService, casaC
         link={secureForm.link}
         title={'Aplicación web con implementaciones para minimizar las posibles vulnerabilidades'}/>
 
+         <ProjectsArticle
+        id={'abito'}
+        handleModals={handleModals}
+        tech={['HTML/CSS']}        
+        img={abito_mob}
+        alt={'Web de Abito Studio'}
+        link={abitoProject.link}
+        title={'Web de Abito Studio'}/>
+
         <ProjectsArticle
         id={'af_Pictures'}
         handleModals={handleModals}
@@ -111,6 +122,8 @@ const Projects =({showModal,handleModals, RandMProject, matchPointService, casaC
         <Modal projectObject={afPictures} id='af_Pictures' showModal={showModal} handleModal={handleModals} img={{img:af_pictures_desk, text:"Vista del landing en versión desktop"}} imgClass='modal__img desktop'/> 
 
         <Modal projectObject={secureForm} id='secureForm' showModal={showModal} handleModal={handleModals} img={{img:secForm_desk, text:"Vista del dashboard del administrador en desktop"}} imgClass='modal__img desktop'/>
+
+        <Modal projectObject={abitoProject} id='abito' showModal={showModal} handleModal={handleModals} img={{img:abito_desk, text:"Vista versión desktop de reseñas de clientes"}} imgClass='modal__img desktop'/>
               
       </ul>      
     </section>

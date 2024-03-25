@@ -50,6 +50,11 @@ function App() {
     text: "Desarrollado en MERN con medidas para evitar las vulnerabilidades marcadas por OWASP, como ataques de fuerza bruta o de DoS, XSS etc. Aún no está desplegado pero se puede ver el código en Github.",
     link:"https://github.com/Calpurniax/secure_form"
   }
+  const abitoProject={
+    title: "Web para AbitoStudio, backoffice",
+    text: "Web estática desarrollada con HTML y CSS, con diseño minimalista y elegante",
+    link:"https://www.abitostudio.com/"
+  }
   const afPictures={
     title: "Web para AF Pictures, distribuidora audiovisual",
     text: "Web estática desarrollada con PHP y alojada en servidor Apache.",
@@ -108,7 +113,7 @@ function App() {
         handleModals={handleModals} RandMProject={RandMProject}
         matchPointService={matchPointService}
         casaCantoProject={casaCantoProject} taskListProject={taskListProject}
-        cardCreator={cardCreator} restaurantApp={restaurantApp} secureForm={secureForm} afPictures={afPictures}/>
+        cardCreator={cardCreator} restaurantApp={restaurantApp} secureForm={secureForm} abitoProject={abitoProject} afPictures={afPictures}/>
     } else if (vista.summary) {
       return <Summary />
     } else return <Landing pdfDocument={pdfDocument} />
