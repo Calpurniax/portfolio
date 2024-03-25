@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "./static/css/main.323d914a.css",
+    "main.js": "./static/js/main.f1b6760b.js",
+    "static/js/787.1ed0c42c.chunk.js": "./static/js/787.1ed0c42c.chunk.js",
+    "static/media/abito_mob.png": "./static/media/abito_mob.a5cd913831a8f11f359d.png",
+    "static/media/restApp_mobile.png": "./static/media/restApp_mobile.5cfbb18b91a8e6107fd5.png",
+    "static/media/afpictures_mob.png": "./static/media/afpictures_mob.0dd0a2c3b0a500dae129.png",
+    "static/media/afpictures_desk.png": "./static/media/afpictures_desk.40905e35c4de6c666675.png",
+    "static/media/mpservice_mob.png": "./static/media/mpservice_mob.f52056a5e1ddea05b90d.png",
+    "static/media/restApp_desktop.png": "./static/media/restApp_desktop.ed893c77b82189abb969.png",
+    "static/media/casaCanto_mobile.png": "./static/media/casaCanto_mobile.fcba966bc74846bb886e.png",
+    "static/media/mpservice_deskt.png": "./static/media/mpservice_deskt.e87ace62d3e5d97dd9b5.png",
+    "static/media/abito_deskt.png": "./static/media/abito_deskt.f6aefac9dde7cbda772b.png",
+    "static/media/sofia-gracia.pdf": "./static/media/sofia-gracia.e8fb9911bb23681b77a3.pdf",
+    "static/media/card-creator_desktop.png": "./static/media/card-creator_desktop.fa1223c6fdea4f60c403.png",
+    "static/media/rym_desktop.png": "./static/media/rym_desktop.7ae934eec714ad7f5a4f.png",
+    "static/media/card-creator_mobile.png": "./static/media/card-creator_mobile.d6c12bc6b1917d51152c.png",
+    "static/media/rym_mobile.png": "./static/media/rym_mobile.cfe3f0671dbacec2ba01.png",
+    "static/media/casaCanto_desktop.png": "./static/media/casaCanto_desktop.c5f41dae4d410927897a.png",
+    "static/media/foto-sofia.jpg": "./static/media/foto-sofia.074a301d97980aededb9.jpg",
+    "static/media/taskList_mobile.png": "./static/media/taskList_mobile.f8504c8e73a35e51a4fa.png",
+    "static/media/taskList_desktop.png": "./static/media/taskList_desktop.6c1d46eb01b607cb6178.png",
+    "static/media/form_mob.png": "./static/media/form_mob.ff35a633841ded228c55.png",
+    "static/media/form_desk.png": "./static/media/form_desk.b966c49ab8b7e7e0115d.png",
+    "index.html": "./index.html",
+    "main.323d914a.css.map": "./static/css/main.323d914a.css.map",
+    "main.f1b6760b.js.map": "./static/js/main.f1b6760b.js.map",
+    "787.1ed0c42c.chunk.js.map": "./static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.323d914a.css",
+    "static/js/main.f1b6760b.js"
+  ]
+}
