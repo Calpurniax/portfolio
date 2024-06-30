@@ -18,9 +18,10 @@ import af_pictures_desk from "../images/af_pictures/afpictures_desk.png";
 import af_pictures_mob from "../images/af_pictures/afpictures_mob.png"
 import abito_mob from "../images/abito/abito_mob.png";
 import abito_desk from "../images/abito/abito_deskt.png"
+import doggynetes_img from "../images/doggynetes.png"
 import Modal from "../components/modal";
 
-const Projects =({showModal,handleModals, RandMProject, matchPointService, casaCantoProject, taskListProject, cardCreator, restaurantApp, afPictures, abitoProject, secureForm})=>{
+const Projects =({showModal,handleModals, RandMProject, matchPointService, casaCantoProject, taskListProject, cardCreator, restaurantApp, afPictures, abitoProject, secureForm, doggynetes})=>{
  
    return (
     <section className="projects">
@@ -34,6 +35,15 @@ const Projects =({showModal,handleModals, RandMProject, matchPointService, casaC
         alt={'Buscador de personajes de Rick and Morty'}
         link={RandMProject.link}
         title={'Buscador de personajes de Rick and Morty'}/>
+         
+         <ProjectsArticle
+        id={'doggynetes'}
+        handleModals={handleModals}
+        tech={['JS','Python','Firebase']}        
+        img={doggynetes_img}
+        alt={'Aplicación con base de datos desplegada en Kubernetes'}
+        link={doggynetes.link}
+        title={'Aplicación con base de datos desplegada en Kubernetes'}/>
 
         <ProjectsArticle
         id={'matchPoint'}
@@ -124,7 +134,8 @@ const Projects =({showModal,handleModals, RandMProject, matchPointService, casaC
         <Modal projectObject={secureForm} id='secureForm' showModal={showModal} handleModal={handleModals} img={{img:secForm_desk, text:"Vista del dashboard del administrador en desktop"}} imgClass='modal__img desktop'/>
 
         <Modal projectObject={abitoProject} id='abito' showModal={showModal} handleModal={handleModals} img={{img:abito_desk, text:"Vista versión desktop de reseñas de clientes"}} imgClass='modal__img desktop'/>
-              
+
+         <Modal projectObject={doggynetes} id='doggynetes' showModal={showModal} handleModal={handleModals} img={{img:doggynetes_img, text:"Vista versión desktop de la aplicación, con el formulario para crear perros y todos los resultados que contiene la base de datos"}} imgClass='modal__img desktop'/>     
       </ul>      
     </section>
    )

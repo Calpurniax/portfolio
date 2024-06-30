@@ -65,11 +65,12 @@ function App() {
     text: "Proyecto grupal de Adalab, con diseño heredado de otras compañeras. Nuestra tarea consistió en trasladar el código heredado a React, generando una lógica nueva, además crear el backend con NodeJS, y la base de datos con SQLite.",
     link:"https://github.com/Calpurniax/project-promo-r-module-4-team-2"
   }
+  const doggynetes ={
+    title: "Aplicación con base de datos desplegada en Kubernetes",
+    text: "Aplicación contenerizada con dos microservicios: JS vainilla en el lado del cliente y fastAPI en back para conectar con la base de datos de Firebase",
+    link:"https://github.com/Calpurniax/doggynetes"
+  }  
   
-  
-  
-
-
   const handleViewLanding = () => {
     setVista({
       landing: true,
@@ -113,7 +114,7 @@ function App() {
         handleModals={handleModals} RandMProject={RandMProject}
         matchPointService={matchPointService}
         casaCantoProject={casaCantoProject} taskListProject={taskListProject}
-        cardCreator={cardCreator} restaurantApp={restaurantApp} secureForm={secureForm} abitoProject={abitoProject} afPictures={afPictures}/>
+        cardCreator={cardCreator} restaurantApp={restaurantApp} secureForm={secureForm} abitoProject={abitoProject} afPictures={afPictures} doggynetes={doggynetes}/>
     } else if (vista.summary) {
       return <Summary />
     } else return <Landing pdfDocument={pdfDocument} />
