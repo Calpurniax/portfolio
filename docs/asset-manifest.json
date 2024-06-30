@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.323d914a.css",
-    "main.js": "./static/js/main.81ce53fb.js",
+    "main.js": "./static/js/main.024b20a3.js",
     "static/js/787.1ed0c42c.chunk.js": "./static/js/787.1ed0c42c.chunk.js",
     "static/media/abito_mob.png": "./static/media/abito_mob.a5cd913831a8f11f359d.png",
     "static/media/restApp_mobile.png": "./static/media/restApp_mobile.5cfbb18b91a8e6107fd5.png",
@@ -15,6 +15,7 @@
     "static/media/sofia-gracia.pdf": "./static/media/sofia-gracia.e390fd5d1c4746a76934.pdf",
     "static/media/card-creator_desktop.png": "./static/media/card-creator_desktop.fa1223c6fdea4f60c403.png",
     "static/media/rym_desktop.png": "./static/media/rym_desktop.7ae934eec714ad7f5a4f.png",
+    "static/media/doggynetes.png": "./static/media/doggynetes.cbc118eb074b3e279710.png",
     "static/media/card-creator_mobile.png": "./static/media/card-creator_mobile.d6c12bc6b1917d51152c.png",
     "static/media/rym_mobile.png": "./static/media/rym_mobile.cfe3f0671dbacec2ba01.png",
     "static/media/casaCanto_desktop.png": "./static/media/casaCanto_desktop.c5f41dae4d410927897a.png",
@@ -25,11 +26,11 @@
     "static/media/form_desk.png": "./static/media/form_desk.b966c49ab8b7e7e0115d.png",
     "index.html": "./index.html",
     "main.323d914a.css.map": "./static/css/main.323d914a.css.map",
-    "main.81ce53fb.js.map": "./static/js/main.81ce53fb.js.map",
+    "main.024b20a3.js.map": "./static/js/main.024b20a3.js.map",
     "787.1ed0c42c.chunk.js.map": "./static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.323d914a.css",
-    "static/js/main.81ce53fb.js"
+    "static/js/main.024b20a3.js"
   ]
 }
