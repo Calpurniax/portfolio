@@ -9,7 +9,8 @@ export const Summary =()=>(
         <div className="summary__box">         
             <div className="summary__box__border">
                 <SummaryContainer title="Formación" 
-                article={[{title:"Código Facilito", dates:"2024", text:"Bootcamp de Diseño, Interfaces y CSS"},
+                article={[{title:"CFTIC", dates:"2024", text:"Desarrollo de aplicaciones y devOps con Google Cloud Platform"},
+                    {title:"Código Facilito", dates:"2024", text:"Bootcamp de Diseño, Interfaces y CSS"},
                 {title:"Factoría F5", dates:"2023", text:"Ciberseguridad orientada a aplicaciones web"},
                 {title:"Becas Google Fundae", dates:"2023", text:"Diseño y experiencia de usuario"},
                 {title:"Adalab Digital", dates:"2022 - 2023", text:"Web development Bootcamp. Tecnologías: HTML, CSS, JS, SQLite, React, Github"},
