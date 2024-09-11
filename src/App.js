@@ -29,11 +29,11 @@ function App() {
     title: "Web para Match Point Service",
     text: "Página web creada con React, alojada en servidor Apache.",
     link:"https://www.matchpointservice.com/"
-  }
-  const casaCantoProject = {
-    title: "Casa Canto, alquiler vacacional",
-    text: "Página web creada con wordpress, con información de contacto y una galería de fotos, el diseño y la paleta de colores busca transmitir elegancia y sobriedad.",
-    link:"https://casa-canto.com/"
+  } 
+  const peluqueriaLauraProject = {
+    title: "Peluquería Laura",
+    text: "Página web creada con wordpress, con información de contacto y una galería de fotos, el diseño busca transmitir elegancia, combinado con el color azul corporativo de la empresa",
+    link:"https://www.laurapeluqueria.com/"
   }
   const taskListProject = {
     title: "Lista de tareas",
@@ -54,12 +54,7 @@ function App() {
     title: "Web para AbitoStudio, backoffice",
     text: "Web estática desarrollada con HTML y CSS, con diseño minimalista y elegante",
     link:"https://www.abitostudio.com/"
-  }
-  const afPictures={
-    title: "Web para AF Pictures, distribuidora audiovisual",
-    text: "Web estática desarrollada con PHP y alojada en servidor Apache.",
-    link:"https://www.afpictures.com/"
-  }
+  } 
   const cardCreator = {
     title: "Generador de tarjetas de visita",
     text: "Proyecto grupal de Adalab, con diseño heredado de otras compañeras. Nuestra tarea consistió en trasladar el código heredado a React, generando una lógica nueva, además crear el backend con NodeJS, y la base de datos con SQLite.",
@@ -102,7 +97,6 @@ function App() {
     }
   }
 
-
   const handleModals = (id) => {
     const value = showModal[id]
     setShowModal({ ...showModal, [id]: !value })
@@ -113,7 +107,7 @@ function App() {
       return <Projects showModal={showModal}
         handleModals={handleModals} RandMProject={RandMProject}
         matchPointService={matchPointService}
-        casaCantoProject={casaCantoProject} taskListProject={taskListProject}
+        casaCantoProject={casaCantoProject} peluqueriaLauraProject={peluqueriaLauraProject} taskListProject={taskListProject}
         cardCreator={cardCreator} restaurantApp={restaurantApp} secureForm={secureForm} abitoProject={abitoProject} afPictures={afPictures} doggynetes={doggynetes}/>
     } else if (vista.summary) {
       return <Summary />

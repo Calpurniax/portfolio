@@ -6,22 +6,20 @@ import mpservice_desk from "../images/mpservice/mpservice_deskt.png";
 import mpservice_mob from "../images/mpservice/mpservice_mob.png"
 import taskList_desk from "../images/task-list/taskList_desktop.png"
 import taskList_mob from "../images/task-list/taskList_mobile.png"
-import casaCanto_mob from "../images/casa-canto/casaCanto_mobile.png";
-import casaCanto_desk from "../images/casa-canto/casaCanto_desktop.png";
+import peluLaura_mob from "../images/pelu-laura/peluLaura_mob.png"
+import peluLaura_desk from "../images/pelu-laura/peluLaura_deskt.png"
 import cardCreator_desk from "../images/card-creator/card-creator_desktop.png";
 import cardCreator_mob from "../images/card-creator/card-creator_mobile.png";
 import restApp_mob from "../images/restaurant-app/restApp_mobile.png";
 import restApp_desk from "../images/restaurant-app/restApp_desktop.png";
 import secForm_mob from "../images/secure-form/form_mob.png";
 import secForm_desk from "../images/secure-form/form_desk.png"
-import af_pictures_desk from "../images/af_pictures/afpictures_desk.png";
-import af_pictures_mob from "../images/af_pictures/afpictures_mob.png"
 import abito_mob from "../images/abito/abito_mob.png";
 import abito_desk from "../images/abito/abito_deskt.png"
 import doggynetes_img from "../images/doggynetes.png"
 import Modal from "../components/modal";
 
-const Projects =({showModal,handleModals, RandMProject, matchPointService, casaCantoProject, taskListProject, cardCreator, restaurantApp, afPictures, abitoProject, secureForm, doggynetes})=>{
+const Projects =({showModal,handleModals, RandMProject, matchPointService, casaCantoProject, peluqueriaLauraProject, taskListProject, cardCreator, restaurantApp, afPictures, abitoProject, secureForm, doggynetes})=>{
  
    return (
     <section className="projects">
@@ -52,16 +50,16 @@ const Projects =({showModal,handleModals, RandMProject, matchPointService, casaC
         img={mpservice_mob}
         alt={'Web para Match Point Service'}
         link={matchPointService.link}
-        title={'Web para Match Point Service'}/>
+        title={'Web para Match Point Service'}/>        
 
-        <ProjectsArticle
-        id={'casaCanto'}
+           <ProjectsArticle
+        id={'peluqueriaLaura'}
         handleModals={handleModals}
-        tech={['Wordpress']}
-        img={casaCanto_mob}
-        alt={'web Casa Canto'}
-        link={casaCantoProject.link}
-        title={'Casa Canto - alquiler vacacional'}/>
+        tech={['Wordpress']}        
+        img= {peluLaura_desk}
+        alt={'Servicios disponibles de la peluquería: peluquería, manicura y pedicura, estética y tratamientos, maquillaje.'}
+        link={peluqueriaLauraProject.link}
+        title={'Web para Peluquería Laura'}/>
 
          <ProjectsArticle
         id={'taskList'}
@@ -97,16 +95,7 @@ const Projects =({showModal,handleModals, RandMProject, matchPointService, casaC
         img={abito_mob}
         alt={'Web de Abito Studio'}
         link={abitoProject.link}
-        title={'Web de Abito Studio'}/>
-
-        <ProjectsArticle
-        id={'af_Pictures'}
-        handleModals={handleModals}
-        tech={['PHP']}        
-        img={af_pictures_mob}
-        alt={'Web de AF Pictures'}
-        link={afPictures.link}
-        title={'Web de AF Pictures'}/>
+        title={'Web de Abito Studio'}/>      
          
          <ProjectsArticle
         id={'cardCreator'}
@@ -119,18 +108,16 @@ const Projects =({showModal,handleModals, RandMProject, matchPointService, casaC
         
         <Modal projectObject={RandMProject} id='rickAndMorty' showModal={showModal} handleModal={handleModals} img={{img:rickAndMorty_desk, text:"Versión desktop"}} imgClass='modal__img desktop'/>
 
-        <Modal projectObject={matchPointService} id='matchPoint' showModal={showModal} handleModal={handleModals} img={{img:mpservice_desk, text:"Vista del final del landing de la web"}} imgClass='modal__img desktop'/> 
+        <Modal projectObject={matchPointService} id='matchPoint' showModal={showModal} handleModal={handleModals} img={{img:mpservice_desk, text:"Vista del final del landing de la web"}} imgClass='modal__img desktop'/>         
 
-        <Modal projectObject={casaCantoProject} id='casaCanto' showModal={showModal} handleModal={handleModals} img={{img:casaCanto_desk, text:"Versión desktop"}} imgClass='modal__img desktop'/>
+        <Modal projectObject={peluqueriaLauraProject} id='peluqueriaLaura' showModal={showModal} handleModal={handleModals} img={{img:peluLaura_mob, text:"Versión móvil de las tarifas"}} imgClass='modal__img mobile'/>
 
         <Modal projectObject={taskListProject} id='taskList' showModal={showModal} handleModal={handleModals} img={{img:taskList_mob, text:"Versión para móvil"}} imgClass='modal__img mobile'/>
 
         <Modal projectObject={cardCreator} id='cardCreator' showModal={showModal} handleModal={handleModals} img={{img:cardCreator_mob, text:"Versión para móvil"}} imgClass='modal__img mobile'/>
 
         <Modal projectObject={restaurantApp} id='restaurantApp' showModal={showModal} handleModal={handleModals} img={{img:restApp_mob, text:"Versión para móvil"}} imgClass='modal__img mobile'/> 
-           
-        <Modal projectObject={afPictures} id='af_Pictures' showModal={showModal} handleModal={handleModals} img={{img:af_pictures_desk, text:"Vista del landing en versión desktop"}} imgClass='modal__img desktop'/> 
-
+                 
         <Modal projectObject={secureForm} id='secureForm' showModal={showModal} handleModal={handleModals} img={{img:secForm_desk, text:"Vista del dashboard del administrador en desktop"}} imgClass='modal__img desktop'/>
 
         <Modal projectObject={abitoProject} id='abito' showModal={showModal} handleModal={handleModals} img={{img:abito_desk, text:"Vista versión desktop de reseñas de clientes"}} imgClass='modal__img desktop'/>
