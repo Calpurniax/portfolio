@@ -107,8 +107,8 @@ function App() {
       return <Projects showModal={showModal}
         handleModals={handleModals} RandMProject={RandMProject}
         matchPointService={matchPointService}
-        casaCantoProject={casaCantoProject} peluqueriaLauraProject={peluqueriaLauraProject} taskListProject={taskListProject}
-        cardCreator={cardCreator} restaurantApp={restaurantApp} secureForm={secureForm} abitoProject={abitoProject} afPictures={afPictures} doggynetes={doggynetes}/>
+         peluqueriaLauraProject={peluqueriaLauraProject} taskListProject={taskListProject}
+        cardCreator={cardCreator} restaurantApp={restaurantApp} secureForm={secureForm} abitoProject={abitoProject}  doggynetes={doggynetes}/>
     } else if (vista.summary) {
       return <Summary />
     } else return <Landing pdfDocument={pdfDocument} />
