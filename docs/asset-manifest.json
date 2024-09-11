@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.323d914a.css",
-    "main.js": "./static/js/main.865cc238.js",
+    "main.js": "./static/js/main.054e6c26.js",
     "static/js/787.1ed0c42c.chunk.js": "./static/js/787.1ed0c42c.chunk.js",
     "static/media/abito_mob.png": "./static/media/abito_mob.a5cd913831a8f11f359d.png",
     "static/media/restApp_mobile.png": "./static/media/restApp_mobile.5cfbb18b91a8e6107fd5.png",
@@ -24,11 +24,11 @@
     "static/media/form_desk.png": "./static/media/form_desk.b966c49ab8b7e7e0115d.png",
     "index.html": "./index.html",
     "main.323d914a.css.map": "./static/css/main.323d914a.css.map",
-    "main.865cc238.js.map": "./static/js/main.865cc238.js.map",
+    "main.054e6c26.js.map": "./static/js/main.054e6c26.js.map",
     "787.1ed0c42c.chunk.js.map": "./static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.323d914a.css",
-    "static/js/main.865cc238.js"
+    "static/js/main.054e6c26.js"
   ]
 }
