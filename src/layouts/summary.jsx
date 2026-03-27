@@ -20,10 +20,11 @@ export const Summary =()=>(
             </div>
 
             <SummaryContainer title="Experiencia" article={[
+            {title:"Desarrolladora web en CSIC", dates:"2025-2026", text:"Mantenimiento y customización web, programación de plugins propios (HTML, CSS, Wordpress, PHP). Aproximación a un sistema RAG "},
             {title:"Web developer en AF Films", dates:"Enero - marzo 2024", text:"Diseño y creación de nuevas webs, mantenimiento, gestión del hosting "},
-            {title:"Web developer freelance para Graphic Studio y Escribanos del agua", dates: "2023-2024", text:"Creacion y mantenimiento web (HTML/CSS y Wordpress)"},
+            {title:"Web developer freelance para Graphic Studio y Escribanos del agua", dates: "2023-2025", text:"Creacion y mantenimiento web (HTML/CSS y Wordpress)"},
             {title:"Técnico en Ovide BS", dates:"2016 - 2022", text:'Preparación de equipos audiovisuales, asistencia al cliente, jefa técnica en "Encuentros Inesperados" para La Sexta TV'},
-            {title:"Responsable de prácticas audiovisuales en Escuela TAI", dates:"2012-2016", text:"Puente de comunicación entre los alumnos y la escuela, resolución de problemas y supervisión"}]}      
+            {title:"Responsable de prácticas audiovisuales en Escuela TAI", dates:"2012-2016/2024-2025", text:"Puente de comunicación entre los alumnos y la escuela, resolución de problemas y supervisión"}]}      
             />
         </div>
     </section>
